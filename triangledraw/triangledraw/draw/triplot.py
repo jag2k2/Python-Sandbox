@@ -1,4 +1,4 @@
-from geometry import graphics
+from triangledraw.geometry import graphics
 
 def make_plot():
     graphics.draw_triangle([
