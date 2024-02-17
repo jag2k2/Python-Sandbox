@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "example"
+version = "0.1.0"
+description = ""
+authors = ["Jeff Tipps <jeff.tipps@ni.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+triangledraw = {path = "C:/GitRepos/Python-Sandbox/TriangleDraw", develop = true}
+squaremaker = {path = "C:/GitRepos/Python-Sandbox/SquareMaker", develop = true}
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
