@@ -1,10 +1,10 @@
 import os, sys
 print(sys.path)
 
-current_script_directory = os.path.dirname(os.path.abspath(__file__))
-relative_path = '..\\'
-absolute_path = os.path.join(current_script_directory, relative_path)
-sys.path.append(absolute_path)
+current_script_directory = os.path.dirname(__file__)
+relative_path = '..'
+absolute_path = os.path.abspath(os.path.join(current_script_directory, relative_path))
+sys.path.insert(0, absolute_path)
 
 print(sys.path)
 
