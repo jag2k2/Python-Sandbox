@@ -1,6 +1,6 @@
-import sys
-print(sys.path)
+from squaremaker.square import indentify, areaCalculator, volCalculator
 
-from squaredesigner.square import indentify
-
-indentify()
+side = 2
+msg = indentify(side)
+print(msg, "My area is", areaCalculator(side))
+print(msg, "My volume is", volCalculator(side))
